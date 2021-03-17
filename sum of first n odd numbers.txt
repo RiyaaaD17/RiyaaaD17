@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    cout << "\n Enter a number";
+    cin >> x;
+    int sum = 0;
+    int count = 1;
+add:
+    sum =sum + count;
+    count=count+2;
+    if (count <= x) goto add;
+    cout << "\n Sum of first n odd number is:" << sum;
+}
